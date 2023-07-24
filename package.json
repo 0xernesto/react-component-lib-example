@@ -1,6 +1,6 @@
 {
 	"name": "@0xernesto/react-widget-example",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Example React widget library published as @0xernesto/react-widget-example.",
 	"files": [
 		"dist"
@@ -20,6 +20,11 @@
 	},
 	"author": "Ernesto Ramirez",
 	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/0xernesto/react-widget-example.git"
+	},
+	"homepage": "https://github.com/0xernesto/react-widget-example",
 	"devDependencies": {
 		"@rollup/plugin-commonjs": "^25.0.3",
 		"@rollup/plugin-node-resolve": "^15.1.0",
