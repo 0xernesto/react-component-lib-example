@@ -14,9 +14,7 @@
 		"test:match": "jest --verbose",
 		"format": "prettier --write .",
 		"format:check": "prettier --check .",
-		"lint:check": "eslint . --ext .js,.jsx,.ts,.tsx",
-		"publish": "npm publish --access=public",
-		"patch": "npm version patch -m"
+		"lint:check": "eslint . --ext .js,.jsx,.ts,.tsx"
 	},
 	"author": "Ernesto Ramirez",
 	"license": "MIT",
