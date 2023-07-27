@@ -1,6 +1,6 @@
 {
 	"name": "@0xernesto/react-widget-example",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "Example React widget library published as @0xernesto/react-widget-example.",
 	"files": [
 		"dist"
