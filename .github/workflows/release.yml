@@ -1,15 +1,15 @@
-name: Package Publish Flow
+name: release
+
+# trigger on push to main branch or manual dispatch
 on:
-  release:
-    types: [created]
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
-    if: ${{ github.event_name == 'push' || (github.event_name == 'release' && github.event.release.prerelease == false) }}
 
     steps:
       - uses: actions/checkout@v3
@@ -23,7 +23,11 @@ jobs:
 
       - run: npm run-script build
 
+      - name: Run tests
+        run: npm run test
+
       - name: Publish package
-        run: npm publish --access public
+        run: npm run release
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
