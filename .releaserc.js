@@ -1,5 +1,8 @@
 module.exports = {
 	branches: "main",
+	repositoryUrl:
+		"https://x-access-token:${GH_TOKEN}@github.com/0xernesto/react-widget-example.git",
+
 	plugins: [
 		"@semantic-release/commit-analyzer",
 		"@semantic-release/release-notes-generator",
