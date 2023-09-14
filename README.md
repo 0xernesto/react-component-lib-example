@@ -55,7 +55,7 @@ npm publish --access public
 
 After the package has been published for the first time, the following is an example step-by-step process for publishing new releases. Please refer to the [npm docs](https://docs.npmjs.com/cli/v8/commands/npm-version) to better understand the `npm version` command.
 
-**NOTE:** `NPM_TOKEN` must be obtained from your npm account and added to the repo's GitHub Actions secrets. `GITHUB_TOKEN` is a special secret that is automatically created for the repo, so there is no need to explicitely define it anywhere.
+**NOTE:** `NPM_TOKEN` must be obtained from your npm account and added to the repo's GitHub Actions secrets. `GH_TOKEN` needs to be generated in your GitHub settings and added to the repo's GitHub Actions secrets.
 
 1. On your local machine, create a new local branch - for example, `fix_for_the_bug`.
 
