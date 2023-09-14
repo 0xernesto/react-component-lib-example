@@ -1,4 +1,4 @@
-name: Project CI Flow
+name: ci
 on:
   push:
     branches:
