@@ -3,7 +3,6 @@
 ![Static Badge](https://img.shields.io/badge/license-MIT-yellow)
 ![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/0xernesto/react-widget-example/ci.yml?label=tests)
 [![Latest npm version](https://img.shields.io/npm/v/%400xernesto%2Freact-widget-example?logo=npm&label=latest&color=blue)](https://www.npmjs.com/package/@0xernesto/react-widget-example)
-![npm](https://img.shields.io/npm/dt/%400xernesto%2Freact-widget-example?label=downloads&color=green)
 
 ## Overview
 
@@ -86,6 +85,24 @@ git push origin fix_for_the_bug
 5. After the changes have been reviewed, the PR can be squashed and merged to the main branch. This will trigger the GitHub Action workflow that publishes the new release.
 
 The process above ensures that the code in the main branch always reflects that latest package version, and also keeps package versions consistent between npm and GitHub Packages.
+
+## Semantic Versions Overview
+
+The default values for these prefixes are defined in the [.releaserc.js](https://github.com/0xernesto/react-widget-example/blob/main/.releaserc.js) file.
+
+| Prefix     | Version Bump | Description                                                                                                                                                             |
+| ---------- | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `feat`     | Minor        | A new feature is introduced to the application (e.g., version bump from 1.0.0 to 1.1.0).                                                                                |
+| `fix`      | Patch        | A bug fix in the codebase (e.g., version bump from 1.0.0 to 1.0.1).                                                                                                     |
+| `docs`     | No bump      | Documentation only changes, no version bump.                                                                                                                            |
+| `style`    | No bump      | Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc), no version bump.                                                |
+| `refactor` | No bump      | A code change that neither fixes a bug nor adds a feature, no version bump.                                                                                             |
+| `perf`     | Patch        | A code change that improves performance (e.g., version bump from 1.0.0 to 1.0.1).                                                                                       |
+| `test`     | No bump      | Adding missing tests or correcting existing tests, no version bump.                                                                                                     |
+| `build`    | No bump      | Changes that affect the build system or external dependencies (e.g., gulp, broccoli, npm), no version bump.                                                             |
+| `ci`       | No bump      | Changes to CI configuration files and scripts (e.g., Travis, Circle, BrowserStack, SauceLabs), no version bump.                                                         |
+| `chore`    | No bump      | Other changes that don't modify src or test files, no version bump.                                                                                                     |
+| `revert`   | Varied       | Reverts a previous commit, the bump depends on the reverted change (e.g., if a feature is reverted, a minor version bump down). The default bump for `revert` is Minor. |
 
 ## License
 
