@@ -36,6 +36,7 @@ Below is a screenshot of a Next.js 13 app that uses `MyWidget`. The red containe
 -   Name the PR according to [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.2/#specification) guidelines.
 -   All commits must be related to the PR name and commit messages must follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.2/#specification) guidelines.
 -   To make the enforcement of these guidelines easier, husky, commitlint, commitizen, and GitHub Actions have been configured for this project.
+-   All PRs must be squashed and merged to keep a clean history on the main branch.
 
 **When making git commits, run the folowing command instead of `git commit`, and follow the instrucitons.**
 
@@ -82,7 +83,7 @@ git push origin fix_for_the_bug
 
 4. Create a new pull request from the `fix_for_the_bug` branch, review the code, and address any changes necessary. Make sure the pull request name follows [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.2/#specification) guidelines.
 
-5. After the changes have been reviewed, the PR can be merged to the main branch. This will trigger the GitHub Action workflow that publishes the new release.
+5. After the changes have been reviewed, the PR can be squashed and merged to the main branch. This will trigger the GitHub Action workflow that publishes the new release.
 
 The process above ensures that the code in the main branch always reflects that latest package version, and also keeps package versions consistent between npm and GitHub Packages.
 
