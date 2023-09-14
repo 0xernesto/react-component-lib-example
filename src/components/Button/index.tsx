@@ -12,7 +12,7 @@ function Button({ count, setCount }: ButtonProps) {
 
 	return (
 		<button
-			className="h-16 w-36 rounded-xl bg-gray-900 text-blue-500 hover:bg-gray-800 hover:text-blue-600"
+			className="h-20 w-36 rounded-xl bg-gray-900 text-blue-500 hover:bg-gray-800 hover:text-blue-600"
 			onClick={handleClick}
 		>
 			Increase count!
