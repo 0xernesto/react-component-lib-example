@@ -45,14 +45,14 @@ npm run commit
 
 ## Publishing
 
-This project is set up to publish the package via GitHub Actions, only after a new release is created.
+This project is set up to publish the package via GitHub Actions, only after a new release has been created.
 If this is the first time the package is published, the following command should be used:
 
 ```sh
 npm publish --access public
 ```
 
-After the package has been published for the first time, the following is an example step-by-step process for publishing new releases. Please refer to the [npm docs](https://docs.npmjs.com/cli/v8/commands/npm-version) to better understand the `npm version` command.
+After the package has been published for the first time, the following is an example step-by-step process for publishing new releases.
 
 **NOTE:** `NPM_TOKEN` must be obtained from your npm account and added to the repo's GitHub Actions secrets. `GH_TOKEN` needs to be generated in your GitHub settings and added to the repo's GitHub Actions secrets. `GITHUB_TOKEN` is a special secret that is automatically created for the repo, so there is no need to explicitely define it anywhere.
 
